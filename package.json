@@ -1,0 +1,24 @@
+{
+  "name": "scriptassist-qa-automation",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript UI and API automation for the Script Assist patient app",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test tests/ui",
+    "test:api": "playwright test tests/api",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:sanity": "playwright test --grep @sanity",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "install:browsers": "playwright install --with-deps"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}

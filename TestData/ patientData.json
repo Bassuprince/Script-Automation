@@ -1,0 +1,28 @@
+export function uniqueEmail(): string {
+  return `basava${Date.now()}@gmail.com`;
+}
+
+export function getPatientData() {
+  return {
+    title: 'Mrs.',
+    firstName: 'basava',
+    lastName: 'k',
+    email: uniqueEmail(),
+    phoneNumber: '89767876787',
+    dateOfBirth: '2004-05-03T00:00:00.000Z',
+    sex: 'MALE',
+    gender: 'MALE',
+    password: 'Password@123',
+
+    commsPreferences: {
+      email: true,
+      pushNotifications: true,
+      marketingOptIn: true
+    },
+
+    clinicMembership: {
+      clinicId: 7,
+      status: 'PENDING'
+    }
+  };
+}

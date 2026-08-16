@@ -1,0 +1,13 @@
+{
+  "title": "Mr.",
+  "firstName": "Basava",
+  "lastName": "K",
+  "phone": "85236985625",
+  "sex": "Male",
+  "dateOfBirth": {
+    "day": "01",
+    "month": "Jan",
+    "year": "2026"
+  },
+  "password": "Password@123"
+}
