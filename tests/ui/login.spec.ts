@@ -12,8 +12,6 @@ test.describe('Login Test cases', () => {
     await expect(page).toHaveURL(process.env.BASE_URL!);
     await loginPage.login(process.env.USER_EMAIL!, process.env.USER_PASSWORD!);
     await dashboardPage.expectLoaded();
-
-    await loginPage.logout();
   });
   test('@smoke a user with invalid credentials sees an error and stays logged out', async ({ loginPage }) => {
     await loginPage.goto();
